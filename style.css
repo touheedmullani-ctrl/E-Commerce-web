@@ -569,3 +569,116 @@ footer {
         font-size: 13px;
     }
 }
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* BODY */
+body {
+    background: skyblue;
+    color: #333;
+    display: flex;
+    min-height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 220px;
+    background: #ffffff;
+    padding: 20px;
+    border-right: 2px solid #ddd;
+}
+
+.sidebar .side-title {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.sidebar .side-link {
+    margin-bottom: 10px;
+}
+
+.sidebar .side-link a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+/* MAIN CONTENT */
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+/* FORMS */
+form {
+    background: white;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #aaa;
+}
+
+/* PRODUCT CARDS */
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* RESPONSIVE MOBILE FIX */
+@media (max-width: 768px) {
+
+    body {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        text-align: center;
+        border-right: none;
+        border-bottom: 2px solid #ddd;
+    }
+
+    .sidebar .side-link a {
+        font-size: 18px;
+    }
+
+    .content {
+        padding: 15px;
+    }
+
+    form {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+
+

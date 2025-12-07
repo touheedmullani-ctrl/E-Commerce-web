@@ -1,0 +1,265 @@
+  /* ====================== GENERAL RESET ====================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+body {
+    background: #cbdfec;
+    color: #333;
+    display: flex;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+/* ====================== SIDEBAR ====================== */
+.sidebar {
+    width: 220px;
+    background-color: #1d1d2f;
+    color: #fff;
+    padding-top: 20px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.side-title {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #ffd700;
+}
+
+.side-link {
+    padding: 12px 20px;
+    transition: 0.3s;
+}
+
+.side-link a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+}
+
+.side-link:hover {
+    background-color: #46485f;
+    border-left: 4px solid #ffd700;
+}
+
+/* ====================== CONTENT AREA ====================== */
+.content-area {
+    margin-left: 120px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.content-area h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.content-area p {
+    margin-bottom: 20px;
+    color: #333;
+}
+.c{
+    background: url("gemi.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* ====================== PRODUCT / FORM BOX ====================== */
+.product-box {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.product-box img.center-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
+
+.product-box form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-box form label {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.product-box form input,
+.product-box form select,
+.product-box form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.product-box form button {
+    width: 100%;
+    background: #3498db;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.product-box form button:hover {
+    background: #2980b9;
+}
+
+.product-box p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.product-box p a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.product-box p a:hover {
+    text-decoration: underline;
+}
+.main-content {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 40px;
+      width: 95%;
+      flex-wrap: nowrap;
+    }
+
+    .container {
+        background: #fff;
+        margin: 0;
+      padding: 25px;
+      box-shadow: 4px 4px 10px gray;
+      width: 400px;
+      
+    }
+    
+
+
+    h1, h2 {
+      text-align: center;
+      padding: 8px;
+      border-radius: 6px;
+      font-family: 'Georgia';
+      font-size: 22px;
+      margin-top: 0;
+      margin-bottom: 15px;
+    }
+
+    .form-group, .form {
+      margin-bottom: 10px;
+    }
+
+    label {
+      display: inline-block;
+      width: 140px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    input, select {
+      width: 200px;
+      padding: 6px;
+      font-size: 15px;
+      border: 1px solid #888;
+      border-radius: 5px;
+    }
+
+    .gender-group {
+      font-size: 15px;
+    }
+
+    .gender-group input {
+      width: auto;
+      margin-right: 5px;
+    }
+
+    button {
+      width: 100%;
+       background: #3498db;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background: #2980b9;
+    }
+
+/* ====================== RESPONSIVE ====================== */
+@media (max-width: 768px) {
+    .content-area {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .product-box {
+        padding: 20px;
+    }
+}  
+.login{
+    margin-bottom: 3px;
+    color: white;
+    background-color: #202038 ;
+    text-align: center;
+    width: 100%;
+    margin-left: 0;
+    padding-left: 2px;
+}
+.t{
+     margin-bottom: 3px;
+     color: #1a1ad9;
+}
+footer{
+    text-align: center;
+    padding: 19px;
+    margin-top: 5px;
+    margin:3px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+} 
+ 

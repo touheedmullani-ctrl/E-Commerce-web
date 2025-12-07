@@ -333,7 +333,7 @@ select:focus {
 /* ======================
    RESPONSIVE — MOBILE FIX
 ====================== */
-@media(max-width: 768px) {
+@media(max-width: 1080px) {
 
     body {
         width: 100%;
@@ -394,7 +394,7 @@ select:focus {
 }
 
 /* VERY SMALL SCREENS */
-@media(max-width: 480px) {
+@media(max-width: 1080px) {
 
     .product-img {
         height: 130px;

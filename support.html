@@ -1,0 +1,165 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Support - MyStore</title>
+<style>
+    /* ===== GENERAL STYLES ===== */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', Arial, sans-serif;
+    }
+
+    body {
+        display: flex;
+        height: 100vh;
+        overflow: hidden;
+        background: #f4f7f9;
+        color: #333;
+    }
+
+    /* ===== SIDEBAR ===== */
+    .sidebar {
+        width: 220px;
+        background-color: #1d1d2f;
+        color: #fff;
+        padding-top: 20px;
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        height: 100%;
+        overflow-y: auto;
+    }
+
+    .side-title {
+        font-size: 22px;
+        text-align: center;
+        margin-bottom: 20px;
+        font-weight: bold;
+        color: #ffd700;
+    }
+
+    .side-link {
+        padding: 12px 20px;
+        transition: 0.5s;
+    }
+
+    .side-link a {
+        text-decoration: none;
+        color: #fff;
+        display: block;
+        font-size: 16px;
+    }
+
+    .side-link:hover {
+        background-color: #46485f;
+        border-left: 4px solid #ffd700;
+    }
+
+    /* ===== CONTENT AREA ===== */
+    .content-area {
+        margin-left: 240px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .content-area h1 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .content-area p {
+        margin-bottom: 20px;
+        color: #555;
+    }
+
+    /* ===== SUPPORT BOX ===== */
+    .product-box {
+        background: #fff;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+        width: 100%;
+        max-width: 400px;
+        text-align: center;
+    }
+
+    .product-box img.center-img {
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+        margin-bottom: 20px;
+        border-radius: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .product-box p {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
+        .content-area {
+            margin-left: 0;
+            padding: 20px;
+        }
+
+        .sidebar {
+            width: 100%;
+            height: auto;
+            position: relative;
+        }
+    }
+</style>
+<link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+<div class="sidebar">
+      <div class="side-link"><a href="index.html">Home</a></div>
+    <div class="side-link"><a href="products.html">Products</a></div>
+    <div class="side-link"><a href="categories.html">Categories</a></div>
+    <div class="side-link"><a href="offers.html">Offers</a></div>
+    <div class="side-link"><a href="cart.html">Cart</a></div>
+    <div class="side-link"><a href="wishlist.html">Wishlist</a></div>
+    <div class="side-link"><a href="orders.html">Orders</a></div>
+    <div class="side-link"><a href="about.html">About Us</a></div>
+    <div class="side-link"><a href="contact.html">Contact</a></div>
+    <div class="side-link"><a href="login.html">Login</a></div>
+    <div class="side-link"><a href="register.html">Register</a></div>
+    <div class="side-link"><a href="settings.html">Settings</a></div>
+    <div class="side-link"><a href="support.html">Support</a></div>
+    <div class="side-link"><a href="terms.html">Terms</a></div>
+    <div class="side-link"><a href="privacy.html">Privacy</a></div>
+</div>
+
+<div class="content-area">
+    <h1>Customer Support</h1>
+    <p>We are here to help you 24/7.</p>
+
+    <div class="product-box">
+        <img src="cus.png" class="center-img" alt="Customer Support">
+
+        <p>Contact us via email, phone, or live chat.</p>
+        <p>Email: support@mystore.com</p>
+        <p>Phone: +91-1234567890</p>
+        <p>Live Chat: Available on website</p>
+    </div>
+     <footer  >&copy copyright My Store all Rights reserved</footer>
+</div>
+
+</body>
+</html>

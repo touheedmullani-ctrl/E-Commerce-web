@@ -1,4 +1,4 @@
- /* ======================
+  /* ======================
    GENERAL RESET & BODY
 ====================== */
 * {
@@ -11,30 +11,18 @@
 body {
     background: #cbdfec;
     color: #333;
+    display: flex;
     min-height: 100vh;
-    width: 100%;
-    overflow-x: hidden;
 }
-
-/* ======================
-   IMAGES
-====================== */
-img {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-    border-radius: 4px 4px 10px grey;
-}
-
-/* ======================
-   HOME PAGE GRID
-====================== */
+/*home*/
+/* HOME PAGE GRID FIX (full width, no empty right space) */
 .home-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 25px;
 }
 
+/* CATEGORY BOX */
 .home-box {
     background: white;
     padding: 15px;
@@ -42,7 +30,7 @@ img {
     border: 1px solid #ddd;
 }
 
-/* multiple small imgs */
+/* MULTIPLE IMAGES IN A ROW */
 .img-row {
     display: flex;
     flex-wrap: wrap;
@@ -56,10 +44,12 @@ img {
     border-radius: 5px;
 }
 
+/* RATING */
 .rating {
     font-size: 14px;
     margin-bottom: 8px;
 }
+
 
 /* ======================
    SIDEBAR
@@ -72,11 +62,9 @@ img {
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
+    position: fixed;
     height: 100%;
     overflow-y: auto;
-    position: fixed;
-    top: 0;
-    left: 0;
 }
 
 .side-title {
@@ -111,7 +99,6 @@ img {
     margin-left: 240px;
     padding: 30px;
     flex-grow: 1;
-    width: 100%;
 }
 
 .content-area h1 {
@@ -124,16 +111,17 @@ img {
     line-height: 1.6;
     font-size: 16px;
 }
-
-.c {
+.c{
     background: url("gemi.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 /* ======================
-   PRODUCT GRID
+   PRODUCT / CARD BOX
 ====================== */
+
+/* GRID FIX (Removes right side empty space) */
 .product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
@@ -141,6 +129,7 @@ img {
     padding: 20px;
 }
 
+/* PRODUCT BOX */
 .product-box {
     background: white;
     padding: 15px;
@@ -149,6 +138,7 @@ img {
     border: 1px solid #ddd;
 }
 
+/* PRODUCT IMAGE */
 .product-img {
     width: 100%;
     height: 180px;
@@ -161,6 +151,7 @@ img {
     object-fit: cover;
 }
 
+/* PRICE + BADGE */
 .price {
     font-weight: bold;
     margin: 5px 0;
@@ -171,8 +162,8 @@ img {
     color: green;
 }
 
-.buy,
-.cart {
+/* BUTTONS */
+.buy, .cart {
     width: 100%;
     padding: 10px;
     margin-top: 8px;
@@ -191,8 +182,14 @@ img {
     color: white;
 }
 
-.product-box h3,
-.product-box h2 {
+/* RATING */
+.rating {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+
+.product-box h3, .product-box h2 {
     margin-bottom: 8px;
     color: #1e1e2f;
 }
@@ -207,6 +204,13 @@ img {
     transform: translateX(-3px);
     box-shadow: 0 8px 16px rgba(0,0,0,0.1);
 }
+.center-img {
+    display: block;
+    margin: 0 auto;     /* Centers the image */
+    max-width: 100%;    /* Responsive */
+    height: auto;
+}
+
 
 /* ======================
    BUTTONS
@@ -253,8 +257,67 @@ select:focus {
 }
 
 /* ======================
-   CATEGORY PAGE
+   COMING SOON BOX
 ====================== */
+.coming-box {
+    background: #fff;
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    margin-top: 20px;
+}
+
+.coming-box img {
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+/* ======================
+   LIST STYLING
+====================== */
+ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+img{
+    width:500px;
+    border-radius: 4px 4px 10px grey;
+}
+.buy-btn, .cart-btn {
+    padding: 8px 12px;
+    margin: 5px 3px 0 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.buy-btn {
+    background: #28a745;
+    color: white;
+}
+
+.cart-btn {
+    background: #007bff;
+    color: white;
+}
+
+.buy-btn:hover {
+    background: #218838;
+}
+
+.cart-btn:hover {
+    background: #0069d9;
+}
+/* ======================
+   CATEGORY PAGE (Amazon-style full width)
+====================== */
+
 .category-box {
     display: flex;
     align-items: center;
@@ -276,6 +339,7 @@ select:focus {
 .category-details h3 {
     margin-bottom: 8px;
     font-size: 20px;
+    color: #1e1e2f;
 }
 
 .category-details p {
@@ -283,9 +347,14 @@ select:focus {
     color: #444;
 }
 
+.category-box:hover {
+    transform: translateX(-4px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+}
 /* ======================
-   CART PAGE
+   CART PAGE STYLING
 ====================== */
+
 .cart-item-box {
     display: flex;
     align-items: center;
@@ -312,12 +381,14 @@ select:focus {
 .cart-details .price {
     color: #e63946;
     font-size: 18px;
+    margin-bottom: 10px;
 }
 
 .qty-box {
     padding: 5px;
     font-size: 15px;
     border-radius: 5px;
+    margin-bottom: 12px;
 }
 
 .cart-buttons {
@@ -325,83 +396,79 @@ select:focus {
     gap: 10px;
 }
 
-.remove-btn,
+.remove-btn {
+    padding: 8px 12px;
+    background: #d9534f;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
 .buy-now-btn {
-    width: 100%;
+    padding: 8px 12px;
+    background: #ffa41c;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
 }
 
-/* ======================
-   RESPONSIVE — MOBILE FIX
-====================== */
-@media(max-width: 1080px) {
-
-    body {
-        width: 100%;
-        overflow-x: hidden;
-    }
-
-    .sidebar {
-        width: 100%;
-        height: auto;
-        position: relative;
-        padding: 10px;
-        display: flex;
-        flex-direction: row;
-        overflow-x: auto;
-        white-space: nowrap;
-        border-bottom: 2px solid #333;
-    }
-
-    .side-title {
-        display: none;
-    }
-
-    .side-link {
-        flex: none;
-        padding: 10px 15px;
-        font-size: 16px;
-    }
-
-    .content-area {
-        margin-left: 0;
-        padding: 15px;
-        width: 100%;
-    }
-
-    .home-grid,
-    .product-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .category-box,
-    .cart-item-box,
-    .product-row {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .category-box img,
-    .cart-item-box img,
-    .left-img {
-        width: 100%;
-        height: 180px;
-        margin: 0 0 15px;
-    }
-
-    .cart-buttons {
-        flex-direction: column;
-    }
+.cart-total-box {
+    background: #fff;
+    padding: 18px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
 }
 
-/* VERY SMALL SCREENS */
-@media(max-width: 1080px) {
-
-    .product-img {
-        height: 130px;
-    }
-
-    button {
-        font-size: 13px;
-        padding: 8px;
-    }
+.checkout-btn {
+    margin-top: 10px;
+    padding: 12px 15px;
+    background: #0077ff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 200px;
 }
+.product-row {
+    display: flex;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    align-items: center;
+}
+
+.left-img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.right-info {
+    flex: 1;
+}
+
+.track-btn {
+    background: #ff9800;
+    color: white;           
+    padding: 8px 12px;
+    border: none;
+    border-radius: 3px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.track-btn:hover {
+    background: #e68900;
+}
+ footer{
+    text-align: center;
+    padding: 19px;
+    margin-top: 5px;
+    margin:3px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+} make it in a way that the website  fits on mobile screen and others screens properly 

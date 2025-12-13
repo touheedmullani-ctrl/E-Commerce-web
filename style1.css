@@ -20,7 +20,7 @@ body {
     background-color: #1d1d2f;
     color: #fff;
 
-    position: relative;
+    position: fixed;
     top: 0;
     left: 0;
 
@@ -163,12 +163,4 @@ footer{
     margin:3px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 } 
-    /* ======================
-   GENERAL RESET & BODY
-====================== */
-
-
-
-
-   
-
+ 

@@ -1,4 +1,4 @@
-  /* ======================
+   /* ======================
    GENERAL RESET & BODY
 ====================== */
 * {
@@ -471,4 +471,89 @@ img{
     margin-top: 5px;
     margin:3px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-} make it in a way that the website  fits on mobile screen and others screens properly 
+} 
+.main-content {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 40px;
+      width: 95%;
+      flex-wrap: nowrap;
+    }
+
+    .container {
+        background: #fff;
+        margin: 0;
+      padding: 25px;
+      box-shadow: 4px 4px 10px gray;
+      width: 400px;
+      
+    }
+    e{
+        position: relative;
+        left: 200px;
+        background: #fff;
+        margin: 0;
+      padding: 25px;
+      box-shadow: 4px 4px 10px gray;
+      width: 400px;
+    }
+
+
+    h1, h2 {
+      text-align: center;
+      padding: 8px;
+      border-radius: 6px;
+      font-family: 'Georgia';
+      font-size: 22px;
+      margin-top: 0;
+      margin-bottom: 15px;
+    }
+
+    .form-group, .form {
+      margin-bottom: 10px;
+    }
+
+    label {
+      display: inline-block;
+      width: 140px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    input, select {
+      width: 200px;
+      padding: 6px;
+      font-size: 15px;
+      border: 1px solid #888;
+      border-radius: 5px;
+    }
+
+    .gender-group {
+      font-size: 15px;
+    }
+
+    .gender-group input {
+      width: auto;
+      margin-right: 5px;
+    }
+
+    button {
+      width: 100%;
+       background: #3498db;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background: #2980b9;
+    }
+    .c{
+        position: relative;
+        left:200px;
+    }

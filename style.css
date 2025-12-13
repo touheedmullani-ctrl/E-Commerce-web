@@ -553,4 +553,6 @@ img{
     button:hover {
       background: #2980b9;
     }
-   
+      .fc{
+   text-align:left;
+   }

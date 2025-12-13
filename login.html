@@ -1,17 +1,19 @@
- <!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - MyStore</title>
-    
-    <link rel="stylesheet" href="style1.css">
+    <title>Register - MyStore</title>
+   
+    <link rel="stylesheet" href="style.css">
 </head>
-<body> 
-  <div class="sidebar">
+<body>
+
+<!-- SIDEBAR -->
+<div class="sidebar">
     <div class="side-title">Menu</div>
 
-    <div class="side-link"><a href="index.html">Home</a></div>
+      <div class="side-link"><a href="index.html">Home</a></div>
     <div class="side-link"><a href="products.html">Products</a></div>
     <div class="side-link"><a href="categories.html">Categories</a></div>
     <div class="side-link"><a href="offers.html">Offers</a></div>
@@ -27,30 +29,37 @@
     <div class="side-link"><a href="terms.html">Terms</a></div>
     <div class="side-link"><a href="privacy.html">Privacy</a></div>
 </div>
+
 <!-- PAGE CONTENT -->
 <div class="content-area">
-  <h2 class="t">Login or Create an Account </h2>
-      <div class="container">
-         <img src="log.png" class="center-img" alt="Login Image">
-        <form action="home.html" method="post">
-          <div class="form">
-            <label>Username:</label>
-            <input type="text" name="t1">
-          </div>
-          <div class="form">
-            <label>Password:</label>
-            <input type="password" name="t2">
-          </div>
-          <div class="form">
-            <label>Email:</label>
-            <input type="email" name="t3">
-          </div>
-          <button>Login</button>
-        </form>
-         <p>Don't have an account? <a href="register.html">Create an Account</a></p>
+  <h2 class="t" style="color:rgb(93, 93, 223);"> Login into your exiting account</h2>
+     <div class="main-content">
+    <div class="container">
+      <h2>Login</h2>
+      <div class="form-group">
+        <label>Enter Name:</label>
+        <input type="text" name="name">
       </div>
-        <footer>&copy copyright My Store all Rights reserved</footer>
+      <div class="form-group">
+        <label> Enter Email ID:</label>
+        <input type="email" name="email">
+      </div>
+      <div class="form-group">
+        <label> Enter Password:</label>
+        <input type="password" name="password">
+      </div>
+      <div class="form-group">
+        <label>Date of Birth:</label>
+        <input type="date" name="dob">
+      </div>
+      <button>Register</button>
+       <p >Create an Account?? <a href="register.html">Register here</a></p>
+    </div>
 
+    </div>
+ <footer>&copy copyright My Store all Rights reserved</footer>
 </div>
+
 </body>
 </html>
+
